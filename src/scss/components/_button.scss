@@ -1,0 +1,29 @@
+button,
+.button {
+  display: inline-block;
+  padding: 0 2.5rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: var(--fs-100);
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-100);
+  font-weight: 700;
+  background: var(--c-primary);
+  color: var(--c-white);
+  transition: box-shadow 0.3s ease-in-out 0s;
+
+  &:hover {
+    box-shadow: rgb(80 63 205 / 90%) 0px 1px 20px;
+  }
+
+  @media (min-width: 48em) {
+    height: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+a.button {
+  text-decoration: none;
+}

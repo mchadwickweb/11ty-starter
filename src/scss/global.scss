@@ -1,0 +1,70 @@
+:root {
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1140,18,1.25,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+  --fs-50: clamp(0.83rem, calc(0.81rem + 0.13vw), 0.9rem);
+  --fs-100: clamp(1rem, calc(0.95rem + 0.24vw), 1.13rem);
+  --fs-200: clamp(1.2rem, calc(1.12rem + 0.4vw), 1.41rem);
+  --fs-300: clamp(1.44rem, calc(1.32rem + 0.62vw), 1.76rem);
+  --fs-400: clamp(1.73rem, calc(1.54rem + 0.92vw), 2.2rem);
+  --fs-500: clamp(2.07rem, calc(1.81rem + 1.31vw), 2.75rem);
+  --fs-600: clamp(2.49rem, calc(2.12rem + 1.84vw), 3.43rem);
+
+  --fl-heading: 25ch;
+  --fl-content: 70ch;
+
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --s-50: 0.5rem;
+  --s-100: 1rem;
+  --s-200: 2rem;
+  --s-300: 4rem;
+  --s-400: 8rem;
+  --s-500: 12rem;
+
+  --lh: 1.8;
+  --lh-heading: 1.1;
+
+  --c-font: hsl(0, 0%, 15%);
+  --c-font-faded: hsl(0, 0%, 20%);
+
+  --c-primary: hsl(248, 57%, 53%);
+  --c-white: hsl(0, 0%, 100%);
+  --c-black: hsl(0, 0%, 0%);
+  --c-grey: hsl(0deg 0% 15%);
+  --c-error: hsl(0deg 98% 70%);
+
+  --a-fadeInDown: fadeInDown 0.8s ease-in backwards;
+  --a-delay-100: 0.2s;
+  --a-delay-200: 0.4s;
+  --a-delay-300: 0.6s;
+  --a-delay-400: 0.8s;
+
+  --border: 2px solid hsl(0deg 0% 22%);
+  --border-radius-100: 10px;
+  --border-radius-200: 20px;
+}
+
+@import "./reset";
+
+html,
+body {
+  font-family: "Inter", Helvetica, sans-serif;
+  line-height: var(--lh);
+  color: var(--c-font);
+}
+
+:focus {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+@import "./typography";
+@import "./layout";
+@import "./forms";
+@import "./utilities";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/button";

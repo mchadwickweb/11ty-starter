@@ -1,0 +1,59 @@
+.list-plain {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Credit - Scott O'Hara: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.mt-100 {
+  margin-top: var(--s-100);
+}
+.mt-200 {
+  margin-top: var(--s-200);
+}
+.mt-300 {
+  margin-top: var(--s-300);
+}
+.mt-400 {
+  margin-top: var(--s-400);
+}
+
+.mb-100 {
+  margin-bottom: var(--s-100);
+}
+.mb-200 {
+  margin-bottom: var(--s-200);
+}
+.mb-300 {
+  margin-bottom: var(--s-300);
+}
+.mb-400 {
+  margin-bottom: var(--s-400);
+}
+
+.animation-fadeInDown-100 {
+  animation: var(--a-fadeInDown);
+  animation-delay: var(--a-delay-100);
+}
+.animation-fadeInDown-200 {
+  animation: var(--a-fadeInDown);
+  animation-delay: var(--a-delay-200);
+}
+.animation-fadeInDown-300 {
+  animation: var(--a-fadeInDown);
+  animation-delay: var(--a-delay-300);
+}
+.animation-fadeInDown-400 {
+  animation: var(--a-fadeInDown);
+  animation-delay: var(--a-delay-400);
+}

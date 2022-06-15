@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% set css %}{% include "css/global.css" %}{% endset %}
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/assests/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ meta.title }}</title>
+    <meta name="description" content="{{ meta.description }}"/>
+    {% if meta.canonical %}
+      <link rel="canonical" href="{{ meta.canonical }}">
+    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+      media="(min-width:426px)"
+      as="font"/>
+    <style>{{css | cssmin | safe}}</style>
+  </head>
+  <body>
+    <main>
+      {% include 'components/header.njk' %}
+      <div class="container">
+        {{ content | safe }}
+      </div>
+      {% include "components/footer.njk" %}
+    </main>
+  </body>
+</html>

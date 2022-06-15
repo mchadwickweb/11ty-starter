@@ -1,0 +1,32 @@
+{
+  "name": "11ty-starter-kit",
+  "description": "A starter kit for 11ty",
+  "private": true,
+  "version": "0.1.0",
+  "author": {
+    "name": "Michael Chadwick",
+    "email": "michael@interactstudio.co.uk",
+    "url": "https://www.interactstudio.co.uk"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/mchadwickweb/11ty-starter",
+    "type": "git"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "watch:sass": "sass --watch src/scss/:src/_includes/css",
+    "watch:site": "eleventy --serve",
+    "build:sass": "sass src/scss:src/_includes/css --style=compressed",
+    "build:site": "eleventy",
+    "start": "npm-run-all build --parallel watch:*",
+    "build": "npm-run-all clean build:*"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "clean-css": "^5.3.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.52.1"
+  }
+}

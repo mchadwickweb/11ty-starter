@@ -1,0 +1,52 @@
+h1 {
+  font-size: var(--fs-600);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--fs-400);
+}
+
+h3 {
+  font-size: var(--fs-300);
+}
+
+h4,
+h5,
+h6 {
+  font-size: var(--fs-100);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: var(--lh-heading);
+}
+
+.lead {
+  font-size: var(--fs-200);
+}
+
+p,
+ul,
+ol,
+blockquote {
+  font-size: var(--fs-100);
+  margin: 0;
+  color: var(--c-font-faded);
+  max-width: var(--fl-content);
+}
+
+a {
+  color: var(--c-font-faded);
+}
+
+blockquote {
+  font-size: var(--fs-100);
+  padding-left: var(--s-100);
+  border-left: var(--border);
+}
